@@ -94,7 +94,7 @@
                         android:text="@string/donthaveaccount"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:textSize="@dimen/createaccountdimen"
+                        android:textSize="@dimen/edittext_margin_createaccount"
                         />
 
                     <TextView
@@ -104,7 +104,7 @@
                         android:text="@string/createaccount"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:textSize="@dimen/createaccountdimen"
+                        android:textSize="@dimen/edittext_margin_createaccount"
                         android:layout_toRightOf="@+id/dontHaveAccount"
                         android:onClick="goCreateAccount"
                         />
