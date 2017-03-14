@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="io.github.httpswillybc.appmovil.CreateAccountActivity">
+        tools:context=".CreateAccountActivity">
 
         <include layout="@layout/actionbar_toolbar"/>
 
