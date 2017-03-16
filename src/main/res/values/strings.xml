@@ -14,5 +14,8 @@
     <string name="text_button_createaccount">Únete</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="title_activity_create">CreateActivity</string>
-
+    <string name="username_card">Willy Bardales</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">4 Días</string>
+    <string name="likenumberCard_card">10 Me Gusta</string>
 </resources>
