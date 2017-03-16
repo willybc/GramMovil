@@ -25,6 +25,11 @@
                     android:value=".MainActivity" />
             </activity>
 
+            <activity
+                android:name=".ReferenciaActivity"
+                android:label="RefenrenciaActivity"
+                android:theme="@style/AppTheme"></activity>
+
         </application>
 
     </manifest>
