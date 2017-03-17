@@ -6,5 +6,14 @@
 
     tools:context="io.github.httpswillybc.appmovil.ContainerActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:paddingBottom="@dimen/bottombar_height"
+        />
+
+
+
     <include layout="@layout/bottombar"></include>
 </RelativeLayout>
