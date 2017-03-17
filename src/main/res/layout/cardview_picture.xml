@@ -59,7 +59,7 @@
                     android:text="@string/timecard_card"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/firstword_textzize_card"
-                    android:layout_marginleft="@dimen/timecard_marginleft_card"
+                    android:layout_marginLeft="@dimen/timecard_marginleft_card"
 
                     />
 
@@ -86,7 +86,9 @@
                     android:text="@string/likenumberCard_card"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/firstword_textzize_card"
-                    android:layout_marginleft="@dimen/timecard_marginleft_card"
+                    android:layout_marginLeft="@dimen/timecard_marginleft_card"
+
+
 
                     />
             </LinearLayout>
