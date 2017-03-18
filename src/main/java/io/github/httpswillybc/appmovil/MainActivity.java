@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 
+import io.github.httpswillybc.appmovil.ContainerActivity;
+import io.github.httpswillybc.appmovil.CreateAccountActivity;
+
+
 public class MainActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void goHome(View view){
+        Intent intent = new Intent(this, ContainerActivity.class);
+        startActivity(intent);
+    }
 }

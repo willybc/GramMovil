@@ -9,7 +9,7 @@
         />
 
     <tab
-        id="@+id/Home"
+        id="@+id/home"
         title="@string/tab_home"
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_home"

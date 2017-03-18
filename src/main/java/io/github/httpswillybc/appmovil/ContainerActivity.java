@@ -1,23 +1,25 @@
-package io.github.httpswillybc.appmovil;
+ package io.github.httpswillybc.appmovil;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.IdRes;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+ import android.graphics.Color;
+ import android.graphics.drawable.ColorDrawable;
+ import android.support.annotation.IdRes;
+ import android.support.v4.app.FragmentTransaction;
+ import android.support.v7.app.AppCompatActivity;
+ import android.os.Bundle;
 
-import io.github.httpswillybc.appmovil.R;
-import io.github.httpswillybc.appmovil.view.fragment.HomeFragment;
-import io.github.httpswillybc.appmovil.view.fragment.ProfileFragment;
-import io.github.httpswillybc.appmovil.view.fragment.SearchFragment;
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
-import com.roughike.bottombar.OnTabSelectListener;
+ import io.github.httpswillybc.appmovil.R;
+ import io.github.httpswillybc.appmovil.view.fragment.HomeFragment;
+ import io.github.httpswillybc.appmovil.view.fragment.ProfileFragment;
+ import io.github.httpswillybc.appmovil.view.fragment.SearchFragment;
+ import com.roughike.bottombar.BottomBar;
+ import com.roughike.bottombar.OnTabReselectListener;
+ import com.roughike.bottombar.OnTabSelectListener;
 
 public class ContainerActivity extends AppCompatActivity {
+    HomeFragment homeFragment;
+    ProfileFragment profileFragment;
+    SearchFragment searchFragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
