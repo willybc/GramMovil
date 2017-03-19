@@ -10,6 +10,7 @@ import io.github.httpswillybc.appmovil.model.Picture;
 import java.util.ArrayList;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import io.github.httpswillybc.appmovil.R;
 
 /**
@@ -40,6 +41,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.userNameCard.setText(picture.getUserName());
         holder.timeCard.setText(picture.getTime());
         holder.likeNumberCard.setText(picture.getLike_number());
+        Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard);
 
     }
 

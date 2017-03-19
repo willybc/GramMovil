@@ -31,7 +31,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Home", false, view);
+        showToolbar(getResources().getString(R.string.tab_home), false, view);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
@@ -47,9 +47,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_vMH-CoyzvsPLVnn_7nWseR410LhlO89SAifVmrCGlkT5mweQQ", "Willy Barldaes", "1 dias", "5"));
-        pictures.add(new Picture("http://demo.qodeinteractive.com/passage/wp-content/uploads/2013/07/revolution-05-center.jpg", "Willy Barldaes", "3 dias", "2"));
-        pictures.add(new Picture("http://conceptodefinicion.de/wp-content/uploads/2015/05/mar.jpg", "Willy Barldaes", "5 dias", "3"));
+        pictures.add(new Picture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_vMH-CoyzvsPLVnn_7nWseR410LhlO89SAifVmrCGlkT5mweQQ", "Willy Bardales", "1 dias", "5 Me gusta"));
+        pictures.add(new Picture("http://demo.qodeinteractive.com/passage/wp-content/uploads/2013/07/revolution-05-center.jpg", "Cristy Bardales", "3 dias", "2 Me gusta"));
+        pictures.add(new Picture("http://conceptodefinicion.de/wp-content/uploads/2015/05/mar.jpg", "Danette Barldaes", "5 dias", "3 Me gusta"));
         return pictures;
     }
 
