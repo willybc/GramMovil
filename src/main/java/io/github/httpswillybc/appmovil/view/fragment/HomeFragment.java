@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         ArrayList<Picture> pictures = new ArrayList<>();
         pictures.add(new Picture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_vMH-CoyzvsPLVnn_7nWseR410LhlO89SAifVmrCGlkT5mweQQ", "Willy Bardales", "1 dias", "5 Me gusta"));
         pictures.add(new Picture("http://demo.qodeinteractive.com/passage/wp-content/uploads/2013/07/revolution-05-center.jpg", "Cristy Bardales", "3 dias", "2 Me gusta"));
-        pictures.add(new Picture("http://conceptodefinicion.de/wp-content/uploads/2015/05/mar.jpg", "Danette Barldaes", "5 dias", "3 Me gusta"));
+        pictures.add(new Picture("http://conceptodefinicion.de/wp-content/uploads/2015/05/mar.jpg", "Danette Bardales", "5 dias", "3 Me gusta"));
         return pictures;
     }
 

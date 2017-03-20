@@ -35,8 +35,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
-        <activity android:name=".view.PictureDetailActivity">
+        <activity
+            android:name=".view.PictureDetailActivity"
+            android:parentActivityName=".ContainerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContainerActivity"/>
+
         </activity>
+
     </application>
 
 </manifest>

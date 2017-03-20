@@ -1,17 +1,22 @@
 package io.github.httpswillybc.appmovil.adapter;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.app.Activity;
-import android.widget.ImageView;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import io.github.httpswillybc.appmovil.model.Picture;
-import java.util.ArrayList;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+
 import io.github.httpswillybc.appmovil.R;
+import io.github.httpswillybc.appmovil.model.Picture;
+import io.github.httpswillybc.appmovil.view.PictureDetailActivity;
 
 /**
  * Created by UsuarioPC on 18/03/2017.
@@ -42,6 +47,14 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.timeCard.setText(picture.getTime());
         holder.likeNumberCard.setText(picture.getLike_number());
         Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard);
+
+        holder.pictureCard.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (activity, PictureDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
 
     }
 
