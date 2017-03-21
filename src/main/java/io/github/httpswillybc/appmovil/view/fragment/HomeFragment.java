@@ -9,7 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import java.util.ArrayList;
 import io.github.httpswillybc.appmovil.R;
 import io.github.httpswillybc.appmovil.adapter.PictureAdapterRecyclerView;
 import io.github.httpswillybc.appmovil.model.Picture;
