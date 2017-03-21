@@ -46,9 +46,9 @@ public class HomeFragment extends Fragment {
 
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_vMH-CoyzvsPLVnn_7nWseR410LhlO89SAifVmrCGlkT5mweQQ", "Willy Bardales", "1 dias", "5 Me gusta"));
-        pictures.add(new Picture("http://demo.qodeinteractive.com/passage/wp-content/uploads/2013/07/revolution-05-center.jpg", "Cristy Bardales", "3 dias", "2 Me gusta"));
-        pictures.add(new Picture("http://conceptodefinicion.de/wp-content/uploads/2015/05/mar.jpg", "Danette Bardales", "5 dias", "3 Me gusta"));
+        pictures.add(new Picture("https://instagram.fsst1-2.fna.fbcdn.net/t51.2885-15/e35/16908062_1867802106799689_5700031379773849600_n.jpg", "Danette Bardales", "2 semanas", "9 Me gusta"));
+        pictures.add(new Picture("https://instagram.fsst1-2.fna.fbcdn.net/t51.2885-15/e35/16229237_1924365044453814_7498607071651168256_n.jpg", "Cristy Bardales", "7 semanas", "24 Me gusta"));
+        pictures.add(new Picture("https://instagram.fsst1-2.fna.fbcdn.net/t51.2885-15/e15/11356649_877030755705789_573658507_n.jpg", "Willy Bardales", "7 semanas", "9 Me gusta"));
         return pictures;
     }
 
