@@ -34,7 +34,7 @@ public class SearchFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.searchFragment);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 3, GridLayoutManager.VERTICAL, false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false);
 
         picturesRecycler.setLayoutManager(gridLayoutManager);
 
@@ -47,9 +47,9 @@ public class SearchFragment extends Fragment {
 
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("https://img.difoosion.com/wp-content/blogs.dir/28/files/2016/06/fondo5.jpg", "Gabriel Mederos", "4 días", "3 Me gusta"));
-        pictures.add(new Picture("http://images.eldiario.es/canariasahora/sociedad/fondos-acentejojpg_EDIIMA20140403_0542_13.jpg", "Gabriel Caballero", "2 días", "5 Me gusta"));
-        pictures.add(new Picture("http://coolmusic.jinradio.com/wp-content/uploads/sites/2/2014/03/CoolBack7.jpg", "Pablo Dina", "1 días", "4 Me gusta"));
+        pictures.add(new Picture("https://s-media-cache-ak0.pinimg.com/564x/ed/e7/38/ede73801a8524253ee67fae14c0c9235.jpg", "Gabriel Mederos", "4 días", "3 Me gusta"));
+        pictures.add(new Picture("https://s-media-cache-ak0.pinimg.com/564x/b0/50/99/b05099d4c118dd0bff1b4aa8f1baded0.jpg", "Gabriel Caballero", "2 días", "5 Me gusta"));
+        pictures.add(new Picture("https://s-media-cache-ak0.pinimg.com/564x/d8/44/18/d84418cc3ee82dee2338cff38f4a6408.jpg", "Pablo Dina", "1 días", "4 Me gusta"));
 
 
         return pictures;
