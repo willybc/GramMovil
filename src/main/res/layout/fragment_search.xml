@@ -1,14 +1,11 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="io.github.httpswillybc.appmovil.view.fragment.SearchFragment">
-/* Buscador */
-
-
+    tools:context="com.pmcoder.platzigram.view.fragments.SearchFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,6 +13,7 @@
         android:orientation="horizontal"
 
         >
+
         <android.support.v7.widget.SearchView
             android:id="@+id/busqueda_container"
             android:layout_width="wrap_content"
@@ -28,160 +26,78 @@
             android:textSize="18dp"
             android:paddingTop="16dp"
             />
-
     </LinearLayout>
 
-
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
             >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:orientation="horizontal"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                >
-            </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_divider"
-                android:background="@android:color/darker_gray"
-                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:background="@android:color/darker_gray"
+            />
 
         /* Historia */
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="90dp">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/photoprofile"
-                    android:layout_margin="10dp"
-                    />
-                  <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/snoopyprofile"
-                        android:layout_margin="10dp"
-                        />
-                  <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/chicaprofile"
-                        android:layout_margin="10dp"
-                        />
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                          android:id="@+id/circleImageView"
-                          android:layout_width="60dp"
-                          android:layout_height="60dp"
-                          android:layout_margin="10dp"
-                          android:src="@drawable/human2"/>
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/chica3"
-                        android:layout_margin="10dp"
-                        />
-            </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp">
+            android:layout_height="90dp">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/photoprofile"
+                android:layout_margin="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/snoopyprofile"
+                android:layout_margin="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/chicaprofile"
+                android:layout_margin="10dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/human2"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/chica3"
+                android:layout_margin="10dp"
+                />
         </LinearLayout>
 
-        /*Imagen 1 */
-        <LinearLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchFragment"
             android:layout_width="match_parent"
-            android:layout_height="125dp">
-            <ImageView
-                android:id="@+id/image_search_1"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo4"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_2"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo2"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_3"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo3"
-                android:layout_margin="2.5dp"
-                />
-        </LinearLayout>
-        /*Imagen 2 */
+            android:layout_height="match_parent"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="125dp">
-            <ImageView
-                android:id="@+id/image_search_1"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo5"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_2"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo6"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_3"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo7"
-                android:layout_margin="2.5dp"
-                />
-        </LinearLayout>
-        /*Imagen 3 */
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="125dp">
-            <ImageView
-                android:id="@+id/image_search_1"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo0"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_2"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo1"
-                android:layout_margin="2.5dp"
-                />
-            <ImageView
-                android:id="@+id/image_search_3"
-                android:layout_width="132dp"
-                android:layout_height="125dp"
-                android:background="@drawable/robo8"
-                android:layout_margin="2.5dp"
-                />
-        </LinearLayout>
 
     </LinearLayout>
-
-
 
 
 </android.support.design.widget.CoordinatorLayout>
